@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <IncidentDef>
+    <defName>Sharknado</defName>
+    <label>sharknado</label>
+    <category>Misc</category>
+    <targetTypes>
+      <li>MapPlayerHome</li>
+    </targetTypes>
+    <workerClass>Sharknado.IncidentWorker_Sharknado</workerClass>
+    <letterLabel>Sharknado</letterLabel>
+    <letterText>A sharknado has formed!\n\nFlying sharks are sure to land!</letterText>
+    <letterDef>ThreatSmall</letterDef>
+    <baseChance>0.25</baseChance>
+    <minRefireDays>15</minRefireDays>
+    <minDifficulty>2</minDifficulty>
+    <tale>Tornado</tale>
+  </IncidentDef>
+</Defs>
