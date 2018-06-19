@@ -25,9 +25,9 @@ namespace Sharknado
       return (TornadoCopy)GenSpawn.Spawn(ThingDef.Named("Tornado"), loc, map);
     }
 
-    protected override bool TryExecuteWorker(IncidentParms parms)
+    // Extracted from TryExecuteWorker
+    protected virtual TornadoCopy TrySpawnOnMap(Map map)
     {
-      Map map = (Map)parms.target;
       CellRect cellRect = CellRect.WholeMap(map).ContractedBy(30);
       if (cellRect.IsEmpty)
       {
@@ -36,9 +36,23 @@ namespace Sharknado
       IntVec3 loc;
       if (!CellFinder.TryFindRandomCellInsideWith(cellRect, (IntVec3 x) => this.CanSpawnTornadoAt(x, map), out loc))
       {
-        return false;
+        return null;
       }
-      base.SendStandardLetter(Spawn(loc, map), new string[0]);
+      return Spawn(loc, map);
+    }
+
+    // Extracted from TryExecuteWorker
+    protected virtual void SendLetter(TornadoCopy tornado, Map map)
+    {
+      base.SendStandardLetter(tornado, new string[0]);
+    }
+
+    protected override bool TryExecuteWorker(IncidentParms parms)
+    {
+      Map map = (Map)parms.target;
+      TornadoCopy tornado = TrySpawnOnMap(map);
+      if (tornado == null) { return false; }
+      SendLetter(tornado, map);
       return true;
     }
 

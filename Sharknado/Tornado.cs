@@ -194,6 +194,7 @@ namespace Sharknado
       Rand.PopState();
     }
 
+    // Extracted from DrawTornadoPart
     protected virtual Material GetMaterial()
     {
       return TornadoMaterial;
@@ -263,7 +264,7 @@ namespace Sharknado
           Pawn firstPawn = intVec.GetFirstPawn(base.Map);
           if (firstPawn == null || !firstPawn.Downed || !Rand.Bool)
           {
-            float damageFactor = GenMath.LerpDouble(0f, 3f, 1f, 0.2f, intVec.DistanceTo(base.Position));
+            float damageFactor = GenMath.LerpDouble(0f, 3f, 1f, 0.2f, intVec.DistanceTo(base.Position));;
             this.DoDamage(intVec, damageFactor);
           }
         }
@@ -292,7 +293,7 @@ namespace Sharknado
       return edifice != null && edifice.def.category == ThingCategory.Building && (edifice.def.building.isNaturalRock || (edifice.def == ThingDefOf.Wall && edifice.Faction == null));
     }
 
-    protected void DoDamage(IntVec3 c, float damageFactor)
+    protected virtual void DoDamage(IntVec3 c, float damageFactor)
     {
       TornadoCopy.tmpThings.Clear();
       TornadoCopy.tmpThings.AddRange(c.GetThingList(base.Map));
