@@ -14,13 +14,12 @@ namespace Sharknado
 
     protected const float MinWind = 1f;
 
-    protected override bool CanFireNowSub(IIncidentTarget target)
+    protected override bool CanFireNowSub(IncidentParms parms)
     {
-      Map map = (Map)target;
-      return map.weatherManager.CurWindSpeedFactor >= 1f;
+        return true;
     }
 
-    protected virtual TornadoCopy Spawn(IntVec3 loc, Map map)
+        protected virtual TornadoCopy Spawn(IntVec3 loc, Map map)
     {
       return (TornadoCopy)GenSpawn.Spawn(ThingDef.Named("Tornado"), loc, map);
     }
@@ -44,7 +43,7 @@ namespace Sharknado
     // Extracted from TryExecuteWorker
     protected virtual void SendLetter(TornadoCopy tornado, Map map)
     {
-      base.SendStandardLetter(tornado, new string[0]);
+      base.SendStandardLetter(tornado, null, new string[0]);
     }
 
     protected override bool TryExecuteWorker(IncidentParms parms)

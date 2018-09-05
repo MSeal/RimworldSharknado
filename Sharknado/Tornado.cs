@@ -335,7 +335,7 @@ namespace Sharknado
             break;
         }
         int amount = Mathf.Max(GenMath.RoundRandom(30f * damageFactor), 1);
-        TornadoCopy.tmpThings[i].TakeDamage(new DamageInfo(DamageDefOf.TornadoScratch, amount, angle, this, null, null, DamageInfo.SourceCategory.ThingOrUnknown)).InsertIntoLog(battleLogEntry_DamageTaken);
+        TornadoCopy.tmpThings[i].TakeDamage(new DamageInfo(DamageDefOf.TornadoScratch, amount, 0f, angle, this, null, null, DamageInfo.SourceCategory.ThingOrUnknown, null)).AssociateWithLog(battleLogEntry_DamageTaken);
       }
       TornadoCopy.tmpThings.Clear();
     }

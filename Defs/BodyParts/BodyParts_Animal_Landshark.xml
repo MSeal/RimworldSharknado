@@ -3,11 +3,11 @@
   <BodyPartDef>
     <defName>SharkTail</defName>
     <label>tail</label>
-	<hitPoints>20</hitPoints>
-	<oldInjuryBaseChance>0.08</oldInjuryBaseChance>
-	<skinCovered>true</skinCovered>
-	<tags>
-		<li>MovingLimbCore</li>
-	</tags>
+      <hitPoints>20</hitPoints>
+    <permanentInjuryChanceFactor>0.08</permanentInjuryChanceFactor>
+      <skinCovered>true</skinCovered>
+      <tags>
+          <li>MovingLimbCore</li>
+      </tags>
   </BodyPartDef>
 </Defs>

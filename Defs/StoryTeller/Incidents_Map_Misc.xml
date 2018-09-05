@@ -4,9 +4,9 @@
     <defName>Sharknado</defName>
     <label>sharknado</label>
     <category>Misc</category>
-    <targetTypes>
-      <li>MapPlayerHome</li>
-    </targetTypes>
+    <targetTags>
+      <li>Map_PlayerHome</li>
+    </targetTags>
     <workerClass>Sharknado.IncidentWorker_Sharknado</workerClass>
     <letterLabel>Sharknado</letterLabel>
     <letterText>A sharknado has formed!\n\nFlying sharks are sure to land!</letterText>

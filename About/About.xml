@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[B18] Sharknado</name>
+    <name>[B19] Sharknado</name>
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldSharknado</url>
-    <targetVersion>0.18.1722</targetVersion>
-    <description>[B18] Sharknado: RimWorld
+    <targetVersion>0.19.2009</targetVersion>
+    <description>[B19] Sharknado: RimWorld
 
 "We can't just wait here for sharks to rain down on us."
 
 Changes:
 
-- Fixes tornados
+- Brings back (better) tornados
 - Adds sharks
-    
+
 
 Description:
 
-Replaces Tornados with Sharknados. They're a bit bitey. Really there's not much else to say.
+Adds Sharknados. They're a bit bitey. Really there's not much else to say.
 
-Though, you should checkout the Mod Settings under Options to configure your Sharknado experience to your liking. Careful with "Sharknado is Life" -- it makes a single Sharknado lag up any PC... Also you'll probably die.
+Though, you should checkout the Mod Settings under Options to configure your Sharknado experience to your liking. Careful with "Sharknado is Life" -- it makes a single Sharknado event lag up any PC... Also you'll probably die.
 
 Use debug mode's Execute Incident to SimCity up your base if you get bored. See how many sharknados it takes before the sharks win (crashing the game counts as a win).
 
@@ -26,29 +26,29 @@ I take no responsibility for lost bases or favorite hats.
 
 
 Required Mods:
-- Hugs Lib
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url]
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1502915564]Swimming Kit[/url] (will load without, but then you have sharks that can't swim...)
 
 
 FAQ:
 
 Is this save game compatible?
 
-    It can be added safely. Removal may cause issues with left-over sharks remains.
-    
+It can be added safely. Removal may cause issues with left-over sharks remains.
+
+
 Does this conflict with other mods?
 
-    Other tornado mods will likely not work at all (though really, why would you need that with Sharknado). Otherwise no.
+It shouldn't. The Swimming Kit mod has more incompatibility chances with anything that modifies pathing search and terrain cost functions, but I'm not aware of any mods which do conflict.
+
 
 (Spoiler) How in the name of all that is holy can Landsharks walk?
 
-    Carefully. Aim for the tails... or the jaws... Or get a bigger boat.
+Carefully. Aim for the tails... or the jaws... Or get a bigger boat.
+
 
 How much alcohol went into making this?
 
-    https://xkcd.com/323/
-
-How does this fix tornados?
-
-    With Sharks. Duh.
+[url=https://xkcd.com/323/]Ballmer Peak[/url]
     </description>
 </ModMetaData>

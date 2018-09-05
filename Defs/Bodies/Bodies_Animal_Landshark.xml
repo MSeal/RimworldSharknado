@@ -29,22 +29,26 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>LeftLung</def>
+          <def>Lung</def>
+          <customLabel>left lung</customLabel>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>RightLung</def>
+          <def>Lung</def>
+          <customLabel>right lung</customLabel>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>LeftKidney</def>
+          <def>Kidney</def>
+          <customLabel>left kidney</customLabel>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
         <li>
-          <def>RightKidney</def>
+          <def>Kidney</def>
+          <customLabel>right kidney</customLabel>
           <coverage>0.02</coverage>
           <depth>Inside</depth>
         </li>
@@ -54,42 +58,51 @@
           <depth>Inside</depth>
         </li>
         <li>
-          <def>Head</def>
+          <def>Neck</def>
           <coverage>0.35</coverage>
-          <groups>
-            <li>HeadAttackTool</li>
-          </groups>
+          <height>Top</height>
           <parts>
             <li>
-              <def>Skull</def>
-              <coverage>0.40</coverage>
-              <depth>Inside</depth>
+              <def>Head</def>
+              <coverage>0.85</coverage>
+              <groups>
+                <li>HeadAttackTool</li>
+              </groups>
               <parts>
                 <li>
-                  <def>Brain</def>
-                  <coverage>0.35</coverage>
+                  <def>Skull</def>
+                  <coverage>0.40</coverage>
                   <depth>Inside</depth>
+                  <parts>
+                    <li>
+                      <def>Brain</def>
+                      <coverage>0.35</coverage>
+                      <depth>Inside</depth>
+                    </li>
+                  </parts>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>left eye</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>Eye</def>
+                  <customLabel>right eye</customLabel>
+                  <coverage>0.05</coverage>
+                </li>
+                <li>
+                  <def>Nose</def>
+                  <coverage>0.15</coverage>
+                </li>
+                <li>
+                  <def>AnimalJaw</def>
+                  <coverage>0.2</coverage>
+                  <groups>
+                    <li>Teeth</li>
+                  </groups>
                 </li>
               </parts>
-            </li>
-            <li>
-              <def>LeftEye</def>
-              <coverage>0.05</coverage>
-            </li>
-            <li>
-              <def>RightEye</def>
-              <coverage>0.05</coverage>
-            </li>
-            <li>
-              <def>Nose</def>
-              <coverage>0.15</coverage>
-            </li>
-            <li>
-              <def>AnimalJaw</def>
-              <coverage>0.2</coverage>
-              <groups>
-                <li>Teeth</li>
-              </groups>
             </li>
           </parts>
         </li>

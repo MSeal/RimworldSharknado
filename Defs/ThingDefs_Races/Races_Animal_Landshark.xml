@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase" ADogSaidBody="Tail">
-		<defName>LandShark</defName>
-		<label>land shark</label>
-		<description>...Candygram</description>
-		<statBases>
-			<MoveSpeed>1</MoveSpeed>
-			<ComfyTemperatureMin>-10</ComfyTemperatureMin>
-			<MarketValue>1500</MarketValue>
-			<MeatAmount>10</MeatAmount>
-			<LeatherAmount>20</LeatherAmount>
-		</statBases>
-		<tools>
-			<li>
-				<label>teeth</label>
-				<capacities>
-					<li>Bite</li>
-				</capacities>
-				<power>28</power>
-				<cooldownTime>3.1</cooldownTime>
-				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
-				<surpriseAttack>
-					<extraMeleeDamages>
-						<li>
-							<def>Stun</def>
-							<amount>28</amount>
-						</li>
-					</extraMeleeDamages>
-				</surpriseAttack>
-			</li>
+    <ThingDef ParentName="AnimalThingBase" ADogSaidBody="Tail">
+        <defName>LandShark</defName>
+        <label>land shark</label>
+        <description>...Candygram</description>
+        <statBases>
+            <MoveSpeed>1.5</MoveSpeed>
+            <!-- Set in DefsLoaded to avoid load errors if missing SwimmingKit 
+            <SwimSpeed>8</SwimSpeed>
+            -->
+            <ComfyTemperatureMin>-10</ComfyTemperatureMin>
+            <MarketValue>1500</MarketValue>
+            <MeatAmount>10</MeatAmount>
+            <LeatherAmount>20</LeatherAmount>
+        </statBases>
+        <tools>
+            <li>
+                <label>teeth</label>
+                <capacities>
+                    <li>Bite</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>3.1</cooldownTime>
+                <linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+                <surpriseAttack>
+                    <extraMeleeDamages>
+                        <li>
+                            <def>Stun</def>
+                            <amount>28</amount>
+                        </li>
+                    </extraMeleeDamages>
+                </surpriseAttack>
+            </li>
       <li>
         <label>head</label>
         <capacities>
@@ -37,109 +40,98 @@
         <power>3</power>
         <cooldownTime>1.25</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
-        <commonality>0.2</commonality>
       </li>
-		</tools>
-		<race>
-			<herdAnimal>false</herdAnimal>
-			<predator>true</predator>
-			<body>Shark</body>
-			<baseHungerRate>0.7</baseHungerRate>
-			<baseBodySize>2</baseBodySize>
-			<baseHealthScale>3.0</baseHealthScale>
-			<foodType>CarnivoreAnimal</foodType>
-			<gestationPeriodDays>360</gestationPeriodDays>
-			<packAnimal>false</packAnimal>
-			<wildness>0.95</wildness>
-			<petness>0.1</petness>
-			<lifeExpectancy>35</lifeExpectancy>
-			<trainableIntelligence>Intermediate</trainableIntelligence>
-			<manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
-			<manhunterOnDamageChance>1</manhunterOnDamageChance>
-			<leatherColor>(90,121,152)</leatherColor>
-			<leatherInsulation>0.8</leatherInsulation>
-			<leatherLabel>shark hide</leatherLabel>
-			<leatherCommonalityFactor>0.3</leatherCommonalityFactor>
-			<leatherMarketValueFactor>4</leatherMarketValueFactor>
-			<leatherStatFactors>
-				<ArmorRating_Blunt>3.2</ArmorRating_Blunt>
-				<ArmorRating_Sharp>2.5</ArmorRating_Sharp>
-				<ArmorRating_Heat>1.5</ArmorRating_Heat>
-			</leatherStatFactors>
-			<meatLabel>shark meat</meatLabel>
-			<nuzzleMtbHours>275</nuzzleMtbHours>
-			<lifeStageAges>
-				<li>
-					<def>AnimalBaby</def>
-					<minAge>0</minAge>
-				</li>
-				<li>
-					<def>AnimalJuvenile</def>
-					<minAge>0.4</minAge>
-				</li>
-				<li>
-					<def>AnimalAdult</def>
-					<minAge>0.8</minAge>
-				</li>
-			</lifeStageAges>
-			<soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
-			<soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
-			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
-		</race>
-		<tradeTags>
-			<li>StandardAnimal</li>
-			<li>BadassAnimal</li>
-		</tradeTags>
-	</ThingDef>
+        </tools>
+        <race>
+            <herdAnimal>false</herdAnimal>
+            <predator>true</predator>
+            <body>Shark</body>
+            <baseHungerRate>0.7</baseHungerRate>
+            <baseBodySize>2</baseBodySize>
+            <baseHealthScale>3.0</baseHealthScale>
+            <foodType>CarnivoreAnimal</foodType>
+            <gestationPeriodDays>360</gestationPeriodDays>
+            <packAnimal>false</packAnimal>
+            <wildness>0.95</wildness>
+      <nuzzleMtbHours>275</nuzzleMtbHours>
+            <petness>0.1</petness>
+            <lifeExpectancy>35</lifeExpectancy>
+      <trainability>Intermediate</trainability>
+            <manhunterOnTameFailChance>0.6</manhunterOnTameFailChance>
+            <manhunterOnDamageChance>1</manhunterOnDamageChance>
+            <meatLabel>shark meat</meatLabel>
+            <lifeStageAges>
+                <li>
+                    <def>AnimalBaby</def>
+                    <minAge>0</minAge>
+                </li>
+                <li>
+                    <def>AnimalJuvenile</def>
+                    <minAge>0.4</minAge>
+                </li>
+                <li>
+                    <def>AnimalAdult</def>
+                    <minAge>0.8</minAge>
+                </li>
+            </lifeStageAges>
+            <soundMeleeHitPawn>Pawn_Melee_BigBash_HitPawn</soundMeleeHitPawn>
+            <soundMeleeHitBuilding>Pawn_Melee_BigBash_HitBuilding</soundMeleeHitBuilding>
+            <soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+        </race>
+        <tradeTags>
+            <li>StandardAnimal</li>
+            <li>BadassAnimal</li>
+        </tradeTags>
+    </ThingDef>
 
-	<PawnKindDef ParentName="AnimalKindBase">
-		<defName>LandShark</defName>
-		<label>land shark</label>
-		<race>LandShark</race>
-		<combatPower>200</combatPower>
-		<lifeStages>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Animal/Landshark/shark</texPath>
-					<drawSize>1.6</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-					<drawSize>1.6</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Animal/Landshark/shark</texPath>
-					<drawSize>1.95</drawSize>
-					<shadowData>
-						<volume>(0.25, 0.3, 0.25)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-					<drawSize>1.6</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-			<li>
-				<bodyGraphicData>
-					<texPath>Things/Animal/Landshark/shark</texPath>
-					<drawSize>2.2</drawSize>
-					<shadowData>
-						<volume>(0.3, 0.4, 0.3)</volume>
-						<offset>(0,0,-0.15)</offset>
-					</shadowData>
-				</bodyGraphicData>
-				<dessicatedBodyGraphicData>
-					<texPath>Things/Pawn/Animal/Dessicated/CritterDessicatedMedium</texPath>
-					<drawSize>2</drawSize>
-				</dessicatedBodyGraphicData>
-			</li>
-		</lifeStages>
-	</PawnKindDef>
+    <PawnKindDef ParentName="AnimalKindBase">
+        <defName>LandShark</defName>
+        <label>land shark</label>
+        <race>LandShark</race>
+        <combatPower>200</combatPower>
+        <lifeStages>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Animal/Landshark/shark</texPath>
+                    <drawSize>0.7</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Animal/Landshark/shark_skelly</texPath>
+                    <drawSize>0.7</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Animal/Landshark/shark</texPath>
+                    <drawSize>1.65</drawSize>
+                    <shadowData>
+                        <volume>(0.25, 0.3, 0.25)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Animal/Landshark/shark_skelly</texPath>
+                    <drawSize>1.65</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+            <li>
+                <bodyGraphicData>
+                    <texPath>Things/Animal/Landshark/shark</texPath>
+                    <drawSize>2.2</drawSize>
+                    <shadowData>
+                        <volume>(0.3, 0.4, 0.3)</volume>
+                        <offset>(0,0,-0.15)</offset>
+                    </shadowData>
+                </bodyGraphicData>
+                <dessicatedBodyGraphicData>
+                    <texPath>Things/Animal/Landshark/shark_skelly</texPath>
+                    <drawSize>2.2</drawSize>
+                </dessicatedBodyGraphicData>
+            </li>
+        </lifeStages>
+    </PawnKindDef>
 </Defs>

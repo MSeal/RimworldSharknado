@@ -8,4 +8,4 @@ cp -r Assemblies "${TARGET_DIR}"
 cp -r Defs "${TARGET_DIR}"
 cp -r Languages "${TARGET_DIR}"
 cp -r Textures "${TARGET_DIR}"
-cp -r Patches "${TARGET_DIR}"
+
