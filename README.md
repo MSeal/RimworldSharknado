@@ -1,6 +1,6 @@
 # Sharknado: RimWorld
 
-![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=????)
+![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1502928982)
 
 ![Alt text](About/Preview.png?raw=true "Sharknado")
 
@@ -32,7 +32,8 @@ I take no responsibility for lost bases or favorite hats.
     
 #### Does this conflict with other mods?
 
-> It shouldn't. The Swimming Kit mod has more incompatibility chances with anything that modifies pathing search and terrain cost functions, but I'm not aware of any mods which do conflict.
+> It shouldn't. [Disaster: Tornado](https://github.com/MSeal/RimworldDisasterTornado) works with this mod.
+> The Swimming Kit mod has more incompatibility chances with anything that modifies pathing search and terrain cost functions, but I'm not aware of any mods which do conflict.
 
 #### (Spoiler) How in the name of all that is holy can Landsharks walk?
 
