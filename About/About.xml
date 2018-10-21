@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[B19] Sharknado</name>
+    <name>[1.0] Sharknado</name>
     <author>Pyrce</author>
     <url>https://github.com/MSeal/RimworldSharknado</url>
-    <targetVersion>0.19.2009</targetVersion>
-    <description>[h1][B19] Sharknado: RimWorld[/h1]
+    <targetVersion>1.0.2059</targetVersion>
+    <description>[h1][1.0] Sharknado: RimWorld[/h1]
 
 "We can't just wait here for sharks to rain down on us."
 
@@ -27,7 +27,7 @@ I take no responsibility for lost bases or favorite hats.
 
 [h1]Required Mods[/h1]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url]
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1502915564]Swimming Kit[/url] (will load without, but then you have sharks that can't swim...)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1542399915]Swimming Kit[/url] (will load without, but then you have sharks that can't swim...)
 
 
 [h1]FAQ[/h1]

@@ -1,6 +1,6 @@
 # Sharknado: RimWorld
 
-![Version](https://img.shields.io/badge/Rimworld-B19-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1502928982)
+![Version](https://img.shields.io/badge/Rimworld-1.0-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1545122241)
 
 ![Alt text](About/Preview.png?raw=true "Sharknado")
 
