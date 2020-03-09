@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>[1.0] Sharknado</name>
+    <name>Sharknado</name>
     <author>Pyrce</author>
+    <packageId>pyrce.sharknado</packageId>
     <url>https://github.com/MSeal/RimworldSharknado</url>
-    <targetVersion>1.0.2059</targetVersion>
-    <description>[h1][1.0] Sharknado: RimWorld[/h1]
+    <supportedVersions>
+      <li>1.0</li>
+      <li>1.1</li>
+    </supportedVersions>
+    <modDependencies>
+      <li>
+        <displayName>HugsLib</displayName>
+        <packageId>UnlimitedHugs.HugsLib</packageId>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
+      </li>
+      <li>
+        <displayName>SwimmingKit</displayName>
+        <packageId>pyrce.swimming.modkit</packageId>
+        <steamWorkshopUrl>steam://url/CommunityFilePage/1542399915</steamWorkshopUrl>
+      </li>
+    </modDependencies>
+    <description>[h1]Sharknado: RimWorld[/h1]
 
 "We can't just wait here for sharks to rain down on us."
 
@@ -27,7 +43,7 @@ I take no responsibility for lost bases or favorite hats.
 
 [h1]Required Mods[/h1]
 - [url=https://steamcommunity.com/sharedfiles/filedetails/?id=818773962]Hugs Lib[/url]
-- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1542399915]Swimming Kit[/url] (will load without, but then you have sharks that can't swim...)
+- [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1542399915]Swimming Kit[/url]
 
 
 [h1]FAQ[/h1]

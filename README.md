@@ -1,6 +1,6 @@
 # Sharknado: RimWorld
 
-![Version](https://img.shields.io/badge/Rimworld-1.0-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1545122241)
+![Version](https://img.shields.io/badge/Rimworld-1.1-brightgreen.svg) on [Steam](https://steamcommunity.com/sharedfiles/filedetails/?id=1545122241)
 
 ![Alt text](About/Preview.png?raw=true "Sharknado")
 
@@ -22,7 +22,7 @@ I take no responsibility for lost bases or favorite hats.
 
 ## Required Mods:
 - Hugs Lib
-- [SwimmingKit](https://github.com/MSeal/RimworldSwimming) (will load without, but then you have sharks that can't swim...)
+- [SwimmingKit](https://github.com/MSeal/RimworldSwimming)
 
 ## FAQ:
 

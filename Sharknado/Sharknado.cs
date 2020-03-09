@@ -137,7 +137,7 @@ namespace Sharknado
                 }
             }
             if (anyTornado != null) { 
-                SendLetter(anyTornado, map);
+                SendStandardLetter(parms, anyTornado);
                 return true;
             }
             return false;

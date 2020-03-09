@@ -40,18 +40,12 @@ namespace Sharknado
       return Spawn(loc, map);
     }
 
-    // Extracted from TryExecuteWorker
-    protected virtual void SendLetter(TornadoCopy tornado, Map map)
-    {
-      base.SendStandardLetter(tornado, null, new string[0]);
-    }
-
     protected override bool TryExecuteWorker(IncidentParms parms)
     {
       Map map = (Map)parms.target;
       TornadoCopy tornado = TrySpawnOnMap(map);
       if (tornado == null) { return false; }
-      SendLetter(tornado, map);
+      SendStandardLetter(parms, tornado);
       return true;
     }
 
