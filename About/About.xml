@@ -20,6 +20,10 @@
         <steamWorkshopUrl>steam://url/CommunityFilePage/1542399915</steamWorkshopUrl>
       </li>
     </modDependencies>
+    <loadAfter>
+      <li>UnlimitedHugs.HugsLib</li>
+      <li>pyrce.swimming.modkit</li>
+    </loadAfter>
     <description>[h1]Sharknado: RimWorld[/h1]
 
 "We can't just wait here for sharks to rain down on us."
