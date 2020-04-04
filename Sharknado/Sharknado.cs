@@ -40,14 +40,6 @@ namespace Sharknado
         } 
 
         public override void DefsLoaded() {
-            // Dynamically set the SwimSpeed to avoid requiring SwimmingKit
-            StatDef swimDef = DefDatabase<StatDef>.GetNamed("SwimSpeed", false);
-            if (swimDef != null)
-            {
-                ThingDef shark = ThingDef.Named("LandShark");
-                shark.SetStatBaseValue(swimDef, 8.0f);
-            }
-
             cloudiness = Settings.GetHandle<CloudinessEnums>(
                 "cloudiness",
                 "Sharknado.Cloudiness".Translate(),

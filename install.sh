@@ -10,3 +10,4 @@ cp -r Defs "${TARGET_DIR}"
 cp -r Languages "${TARGET_DIR}"
 cp -r Textures "${TARGET_DIR}"
 cp LoadFolders.xml "${TARGET_DIR}"
+

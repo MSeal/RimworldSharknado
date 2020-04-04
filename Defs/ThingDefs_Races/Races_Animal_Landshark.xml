@@ -6,9 +6,7 @@
         <description>...Candygram</description>
         <statBases>
             <MoveSpeed>1.5</MoveSpeed>
-            <!-- Set in DefsLoaded to avoid load errors if missing SwimmingKit 
             <SwimSpeed>8</SwimSpeed>
-            -->
             <ComfyTemperatureMin>-10</ComfyTemperatureMin>
             <MarketValue>1500</MarketValue>
             <MeatAmount>10</MeatAmount>
