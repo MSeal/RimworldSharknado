@@ -26,9 +26,9 @@ namespace Sharknado
         public enum TornadoEnums { Sharknado = 1, Sharknado2TheSecondOne = 2, Sharknado3OhHellNo = 3, SharknadoThe4thAwakens = 4, Sharknado5GlobalSwarm = 5, Sharknado6 = 6 };
 
         public override string ModIdentifier {
-	        get { return "Sharknado"; }
+            get { return "Sharknado"; }
         }
-    
+
         public static SettingHandle<CloudinessEnums> cloudiness;
         public static SettingHandle<SharkEnthusiasmEnums> enthusiasm;
         public static SettingHandle<SpawnEnums> spawnRate;
@@ -37,7 +37,7 @@ namespace Sharknado
         public void UpdateBaseChance() {
             IncidentDef sharknadoDef = IncidentDef.Named("Sharknado");
             sharknadoDef.baseChance = ((float)cloudiness.Value) / 100.0F;
-        } 
+        }
 
         public override void DefsLoaded() {
             cloudiness = Settings.GetHandle<CloudinessEnums>(
@@ -48,7 +48,7 @@ namespace Sharknado
                 null,
                 "Sharknado.Cloudiness_");
             UpdateBaseChance();
-            cloudiness.OnValueChanged = newValue => { UpdateBaseChance(); };
+            cloudiness.ValueChanged += newValue => { UpdateBaseChance(); };
 
             enthusiasm = Settings.GetHandle<SharkEnthusiasmEnums>(
                 "enthusiasm",

@@ -168,7 +168,7 @@ namespace Sharknado
             if (this.IsHashIntervalTick(4) && !this.CellImmuneToDamage(base.Position))
             {
               float num = Rand.Range(0.6f, 1f);
-              MoteMaker.ThrowTornadoDustPuff(new Vector3(this.realPosition.x, 0f, this.realPosition.y)
+              FleckMaker.ThrowTornadoDustPuff(new Vector3(this.realPosition.x, 0f, this.realPosition.y)
               {
                 y = Altitudes.AltitudeFor(AltitudeLayer.MoteOverhead)
               } + Vector3Utility.RandomHorizontalOffset(1.5f), base.Map, Rand.Range(1.5f, 3f), new Color(num, num, num));
