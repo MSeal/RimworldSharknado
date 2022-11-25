@@ -121,13 +121,18 @@ namespace Sharknado
         protected override bool TryExecuteWorker(IncidentParms parms)
         {
             TornadoCopy anyTornado = null;
+            Log.Warning(parms.ToString());
             Map map = (Map)parms.target;
+            Log.Warning(map.ToString());
+            Log.Warning(SharknadoMod.tornadoCount.ToString());
             for (int i = 0; i < (int)SharknadoMod.tornadoCount.Value; i++) {
                 TornadoCopy tornado = TrySpawnOnMap(map);
+                Log.Warning(i.ToString() + " -> " + tornado.ToString());
                 if (tornado != null) {
                     anyTornado = tornado;
                 }
             }
+            Log.Warning("Send Letter");
             if (anyTornado != null) { 
                 SendStandardLetter(parms, anyTornado);
                 return true;
